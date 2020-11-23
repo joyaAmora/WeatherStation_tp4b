@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using WeatherApp.Commands;
 using WeatherApp.Properties;
 
@@ -35,6 +36,7 @@ namespace WeatherApp.ViewModels
             /// TODO 04a : Sauvegarder la configuration Fait
             Settings.Default.apiKey = ApiKey;
             Settings.Default.Save();
+            MessageBox.Show("Sauvegarder, retournez à la page de méteo");
         }
 
         private string GetApiKey()
